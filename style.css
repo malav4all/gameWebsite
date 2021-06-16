@@ -1,0 +1,481 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#topbar{
+    background-color: #1d1d1d;
+    padding: 10px 0px;
+}
+#topbar ul li{
+    display: inline-block;  
+    padding-top: 10px;
+}
+#topbar ul li,#topbar ul li a{
+    color:#999;
+    letter-spacing: 1px;
+    font-size: 14px;
+    
+}
+#topbar ul li:first-child{
+    margin-right: 30px;
+}
+#topbar ul li a:hover{
+    text-decoration: none;
+}
+#topbar form{
+    position: relative;
+    text-align: right;
+    padding-top:5px ;
+}
+#topbar form input[type="search"]{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+    
+} 
+ 
+#topbar form button{
+    position: absolute;
+    right:0px;
+    height: 35px;
+    padding: 0px 10px;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid #FF5000;
+    background-color: #FF5000;
+    outline: none;
+}
+#topbar form button i{
+    color: #fff;
+}
+#main-nav {
+    padding: 10px 0px;
+}
+#main-nav ul li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+#main-nav ul li a:hover{
+    text-decoration: none;
+    color: #FF5000;
+    transition: 0.5s;
+}
+#main-nav .logo{
+    border: 3px solid #FF5000;
+}
+#main-nav .logo a{
+    font-family: 'Jura', sans-serif;
+    display: block;
+    padding: 10px;
+    line-height: 25px;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+#main-nav .logo a:hover{
+    color:#212121 ;
+}
+#banner{
+    position: relative;
+}
+#banner .text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 60%;
+    transform:translate(-50%,-50%);
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-family:'Jura', sans-serif ;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+#banner .text a{
+    color: #fff;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 1px 30px;
+    font-size: 14px;
+    position: relative;
+    z-index:1 ;
+}
+#banner .text a span{
+    position: relative;
+    z-index:1 ;
+   
+}
+#banner .text a::after{
+    content: "";
+    position: absolute;
+    background-color: #2098d1;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    left: 0px;
+    top: 0px;
+
+}
+#banner .text a::before{
+    content: "";
+    position: absolute;
+    background-color: #FF5000;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    transition: 0.5s;
+
+}
+#banner .text a:hover::before{
+    transform: scale(0 1);
+}
+
+
+   
+
+#section-2{
+    /* background-color: #FF5; */
+    margin-top:40px;
+    position: relative;
+}
+#section-2 .tagline h2{
+    font-family:'Jura', sans-serif ;
+    text-transform: uppercase;
+    font-size:40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+
+}
+#section-2 .tagline span{
+    color:#FF5000;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    
+}
+#section-2 .about h3{
+    font-family: 'Jura', sans-serif;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    
+}
+#section-2 .about span{
+    color:#FF5000;
+    font-style: italic !important;
+    letter-spacing: 4px;
+    line-height: 30px;
+
+}
+#section-2 .about p{
+    margin-top: 20px;
+    color: #999;
+    padding-bottom: 60px;
+}
+#section-2 .lg-im img{
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+}
+#section-2 .sm-im img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#section-3{
+    /* background-color: #201f1f; */
+    background-image: url(https://demo.w3layouts.com/demos_new/template_demo/20-12-2019/gaming_wonderland-demo_Free/1780686526/web/images/service.jpg);
+    margin-top:40px ;
+    padding:40px 0px;
+}
+#section-3 .tag-line h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color:#fff;
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#section-3 .tag-line p{
+    font-family: 'Open Sans', sans-serif;
+    color: #FF5000;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+#section-3 .game {
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+#section-3 .game .img{
+    border: 3px solid #fff;
+    width:100PX;
+    padding: 15px;
+    border-radius: 50%;
+    margin-left: 80px;
+    transition: 0.5s;
+
+}
+/* #section-3 .game .icon{
+    background-color: #FF5000;
+    border: 1px solid lightgreen;
+
+} */
+#section-3 .game .icon h3{
+    /* text-align: center; */
+    margin-left:55px ;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Jura', sans-serif;
+    letter-spacing: 3px;
+    color:#2098d1;
+
+
+}
+#section-3 .game .icon p{
+    /* text-align: center; */
+    margin-left:80px ;
+    color:#fff;
+    text-transform: capitalize;
+    
+}
+#section-4{
+    /* background-color: tomato; */
+    justify-content: space-between;
+    margin: 60px 0px;
+    
+}
+#section-4 .tag h3,#section-4 .tag p{
+    text-align: center;
+}
+#section-4 .tag h3{
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 0px;
+}
+#section-4 .tag p{
+    text-transform: uppercase;
+    color: #FF5000;
+    letter-spacing: 8px;
+    padding-bottom: 25px;
+    font-size: 14px;
+}
+#section-4 .ani{
+    margin-bottom: 30px;
+}
+#section-4 .wrapper{
+    position: relative;
+    overflow: hidden;
+}
+#section-4 .wrapper .game{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     color:#fff;
+     display: flex;
+     align-items: center;
+     align-content: center;
+     justify-content: center;
+     transform: scale(0)  rotate(360deg);
+     transition: 0.5s;
+
+}
+#section-4 .wrapper:hover .game{
+    transform: scale(1) rotate(0deg);
+}
+#section-4 .wrapper .game h1{
+    color:#fff;
+    opacity: 0.8;
+}
+#section-4 .ani img{
+    width:100%;
+}
+#news{
+    margin-bottom: 80px;
+}
+#news .news-text h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Jura', sans-serif;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 0px;
+}
+#news .news-text p{
+    text-align: center;
+    color: #FF5000;
+    letter-spacing: 8px;
+    padding-bottom: 25px;
+    font-size: 14px;
+}
+#news .slider{
+    display: flex;
+    overflow: hidden;
+
+}
+#news .slide{
+    width: 25%;
+    position: relative;
+}
+#news .slide img{
+    width: 100%;
+}
+#news .slide .description{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(100%);
+    transition: 0.4s;
+    border: 1px solid #fff;
+}
+#news .slide:hover .description{
+ transform: translateY(0%);
+}
+#news .slide .description h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Jura', sans-serif;
+    letter-spacing: 4px;
+    background-color:hsla(192, 18%, 92%, 0.31);
+    padding: 10px;
+    font-weight: normal;
+    font-size: 25px;
+    
+}
+#news .slide .description p{
+    color: #fff;
+    letter-spacing: 12px;
+    
+}
+#section-5{
+    margin-bottom: 20px;
+}
+#section-5 .contact h2,#section-5 .contact p{
+    text-align: center;
+    text-transform: uppercase;
+}
+#section-5 .contact h2{
+    font-family:'Jura', sans-serif ;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+}
+#section-5 .contact p{
+    color: #FF5000;
+    letter-spacing: 8px;
+    padding-bottom: 20px;
+}
+
+#section-5 input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 35px;
+    outline: none;
+    background-color: #f5f5f5;
+    border:1px solid #e7e7e7 ;
+    
+}
+#section-5 textarea{
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 12px;
+}
+#section-5 button{
+    width: 100%;
+    background-color: #201f1f;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 18px;
+    border: #201f1f;
+    padding: 10px 0px;
+    margin-top: 20px;
+    transition: 0.4s;
+
+}
+#section-5 button:hover{
+    background-color: #FF5000;
+}
+#footer{
+    background-color: #000;
+    margin: 40px 0px;
+    
+}
+#footer .ft{
+    background-color: #2e2e2e;
+    margin-right: 5px;
+    margin: 80px 0px;
+}
+#footer .ft:hover i{
+    background-color: #fff;
+    color: black;
+    transition: 0.8s;
+
+}
+#footer .ft i{
+    margin: 30px 10px;
+    padding: 20px;
+    border:none;
+    color: white;
+    background-color: #FF5000;
+    font-size: 14px;
+    border-radius: 50%;
+}
+#footer .connect{
+    margin-top:20px ;
+}
+#footer .connect h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size:20px;
+    font-family:'Jura', sans-serif ;
+    letter-spacing: 3px;
+}
+#footer .connect p{
+    color:#999;
+}
+#footer .copy{
+    text-align: center;
+    color:#fff;
+    padding-bottom: 30px;
+
+}
+#footer .copy a{
+    color: #FF5000;
+    text-decoration: underline;
+}
+#footer .copy a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+
